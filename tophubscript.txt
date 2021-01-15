@@ -1,0 +1,229 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TopHub = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Top = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local PrisonBreaker = Instance.new("TextButton")
+local OwlHub = Instance.new("TextButton")
+local IY = Instance.new("TextButton")
+local Fekill = Instance.new("TextButton")
+local PrintGui = Instance.new("TextButton")
+local Murder = Instance.new("TextButton")
+local Cheat2 = Instance.new("TextButton")
+local Cheat1 = Instance.new("TextButton")
+local JailBreak = Instance.new("TextButton")
+local Cheat5 = Instance.new("TextButton")
+local Cheat4 = Instance.new("TextButton")
+local Cheat3 = Instance.new("TextButton")
+
+--Properties:
+
+TopHub.Name = "TopHub"
+TopHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TopHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = TopHub
+Main.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.208163261, 0, 0.356200546, 0)
+Main.Size = UDim2.new(0, 400, 0, 300)
+Main.Active = true
+Main.Draggable = true
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(-0.000289154064, 0, -0.00185577397, 0)
+Top.Size = UDim2.new(0, 400, 0, 30)
+
+Title.Name = "Title"
+Title.Parent = Top
+Title.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0, 0, 0.00769246416, 0)
+Title.Size = UDim2.new(0, 400, 0, 29)
+Title.Font = Enum.Font.Arial
+Title.Text = "TOP HUB"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 20.000
+
+Close.Name = "Close"
+Close.Parent = Top
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.942499995, 0, -0.00333353668, 0)
+Close.Size = UDim2.new(0, 23, 0, 29)
+Close.Font = Enum.Font.Arial
+Close.Text = ""
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 15.000
+Close.TextWrapped = true
+Close.MouseButton1Click:connect(function()
+	Main.Visible = false
+end)
+PrisonBreaker.Name = "PrisonBreaker"
+PrisonBreaker.Parent = Main
+PrisonBreaker.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PrisonBreaker.BorderSizePixel = 0
+PrisonBreaker.Position = UDim2.new(0.0299999993, 0, 0.76000005, 0)
+PrisonBreaker.Size = UDim2.new(0, 70, 0, 60)
+PrisonBreaker.Font = Enum.Font.Arial
+PrisonBreaker.Text = "Prison Breaker"
+PrisonBreaker.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrisonBreaker.TextSize = 15.000
+PrisonBreaker.TextWrapped = true
+PrisonBreaker.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/EsC1JnBE",true))()
+end)
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = Main
+OwlHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+OwlHub.BorderSizePixel = 0
+OwlHub.Position = UDim2.new(0.0300000012, 0, 0.530000091, 0)
+OwlHub.Size = UDim2.new(0, 70, 0, 60)
+OwlHub.Font = Enum.Font.Arial
+OwlHub.Text = "Owl hub"
+OwlHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+OwlHub.TextSize = 15.000
+OwlHub.TextWrapped = true
+OwlHub.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+
+end)
+
+IY.Name = "IY"
+IY.Parent = Main
+IY.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+IY.BorderSizePixel = 0
+IY.Position = UDim2.new(0.0300000012, 0, 0.296666741, 0)
+IY.Size = UDim2.new(0, 70, 0, 60)
+IY.Font = Enum.Font.Arial
+IY.Text = "Infinite Yield"
+IY.TextColor3 = Color3.fromRGB(255, 255, 255)
+IY.TextSize = 15.000
+IY.TextWrapped = true
+
+Fekill.Name = "Fe kill"
+Fekill.Parent = Main
+Fekill.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Fekill.BorderSizePixel = 0
+Fekill.Position = UDim2.new(0.230000004, 0, 0.76000005, 0)
+Fekill.Size = UDim2.new(0, 70, 0, 60)
+Fekill.Font = Enum.Font.Arial
+Fekill.Text = ""
+Fekill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fekill.TextSize = 15.000
+Fekill.TextWrapped = true
+
+PrintGui.Name = "PrintGui"
+PrintGui.Parent = Main
+PrintGui.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PrintGui.BorderSizePixel = 0
+PrintGui.Position = UDim2.new(0.230000004, 0, 0.530000091, 0)
+PrintGui.Size = UDim2.new(0, 70, 0, 60)
+PrintGui.Font = Enum.Font.Arial
+PrintGui.Text = ""
+PrintGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrintGui.TextSize = 15.000
+PrintGui.TextWrapped = true
+PrintGui.MouseButton1Click:connect(function()
+print("broken")
+end)
+
+Murder.Name = "Murder"
+Murder.Parent = Main
+Murder.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Murder.BorderSizePixel = 0
+Murder.Position = UDim2.new(0.230000004, 0, 0.296666741, 0)
+Murder.Size = UDim2.new(0, 70, 0, 60)
+Murder.Font = Enum.Font.Arial
+Murder.Text = "Murder Mystery"
+Murder.TextColor3 = Color3.fromRGB(255, 255, 255)
+Murder.TextSize = 15.000
+Murder.TextWrapped = true
+Murder.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+end)
+
+Cheat2.Name = "Cheat2"
+Cheat2.Parent = Main
+Cheat2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Cheat2.BorderSizePixel = 0
+Cheat2.Position = UDim2.new(0.430000007, 0, 0.76000005, 0)
+Cheat2.Size = UDim2.new(0, 70, 0, 60)
+Cheat2.Font = Enum.Font.Arial
+Cheat2.Text = ""
+Cheat2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cheat2.TextSize = 15.000
+Cheat2.TextWrapped = true
+
+Cheat1.Name = "Cheat1"
+Cheat1.Parent = Main
+Cheat1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Cheat1.BorderSizePixel = 0
+Cheat1.Position = UDim2.new(0.430000007, 0, 0.530000091, 0)
+Cheat1.Size = UDim2.new(0, 70, 0, 60)
+Cheat1.Font = Enum.Font.Arial
+Cheat1.Text = ""
+Cheat1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cheat1.TextSize = 15.000
+Cheat1.TextWrapped = true
+
+JailBreak.Name = "JailBreak"
+JailBreak.Parent = Main
+JailBreak.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+JailBreak.BorderSizePixel = 0
+JailBreak.Position = UDim2.new(0.430000007, 0, 0.296666741, 0)
+JailBreak.Size = UDim2.new(0, 70, 0, 60)
+JailBreak.Font = Enum.Font.Arial
+JailBreak.Text = "JailBreak Gui"
+JailBreak.TextColor3 = Color3.fromRGB(255, 255, 255)
+JailBreak.TextSize = 15.000
+JailBreak.TextWrapped = true
+JailBreak.MouseButton1Click:connect(function()
+	loadstring(game:GetObjects("rbxassetid://3473939051")[1].Source)()
+end)
+
+Cheat5.Name = "Cheat5"
+Cheat5.Parent = Main
+Cheat5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Cheat5.BorderSizePixel = 0
+Cheat5.Position = UDim2.new(0.629999995, 0, 0.75999999, 0)
+Cheat5.Size = UDim2.new(0, 137, 0, 60)
+Cheat5.Font = Enum.Font.Arial
+Cheat5.Text = ""
+Cheat5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cheat5.TextSize = 15.000
+Cheat5.TextWrapped = true
+
+Cheat4.Name = "Cheat4"
+Cheat4.Parent = Main
+Cheat4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Cheat4.BorderSizePixel = 0
+Cheat4.Position = UDim2.new(0.629999995, 0, 0.530000091, 0)
+Cheat4.Size = UDim2.new(0, 137, 0, 60)
+Cheat4.Font = Enum.Font.Arial
+Cheat4.Text = ""
+Cheat4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cheat4.TextSize = 15.000
+Cheat4.TextWrapped = true
+
+Cheat3.Name = "Cheat3"
+Cheat3.Parent = Main
+Cheat3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Cheat3.BorderSizePixel = 0
+Cheat3.Position = UDim2.new(0.629999995, 0, 0.296666771, 0)
+Cheat3.Size = UDim2.new(0, 137, 0, 60)
+Cheat3.Font = Enum.Font.Arial
+Cheat3.Text = ""
+Cheat3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cheat3.TextSize = 15.000
+Cheat3.TextWrapped = true
